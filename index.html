@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Water Project</title>
+    
+</head>
+
+<body>
+
+    <nav class="navbar background">
+        <div class="logo"><img src="img/1-1461367480_835x547.jpg" alt="logo"></div>
+        <ul class="nav-list "></ul>
+            
+            <li><a href="#home" color='black'> HOME </a></li>
+
+            <li><a href="#about"> ABOUT </a></li>
+            <li><a href="#contact"> CONTACT US </a></li>
+        
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+
+        <div id="google_translate_element"></div>
+
+        <div class="bubbles">
+
+            <img src="img/drop.png">
+
+            <img src="img/drop.png">
+
+            <img src="img/drop.png">
+
+            <img src="img/drop.png">
+
+            <img src="img/drop.png">
+
+            <img src="img/drop.png">
+            
+
+
+        </div>
+
+    </nav>
+
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="fhalf">
+                <p class="text-big">PYAU</p>
+                <p class="text-small"> You donate it we Locate it</p>
+                
+
+                <div class="buttons">
+                    <button class="btn">Add my location</button>
+                    <button class="btn">Show PYAU near me</button>
+                </div>
+                <p class="text-small2"> #SWACH JAL HAR PAL </p>
+            </div>
+            <div class="shalf">
+                <img src="img/1200px-Google_Maps_icon.svg.png.webp" alt="Water Image;">
+            </div>
+            
+
+        </div>
+
+    </section>
+
+    <section class="secright">
+        <p class="sectiontag text-big">
+            <The end of Thirst is here>
+        </p>
+        <p class="sectionSubtag text-small">We are here to bring safe water and
+            sanitation to the world through access to small, affordable loans. There is both a need and demand for these
+            loans, because when people have access to safe water, they get time back to go to school, earn an income and
+            take care of their family. It changes their world.
+            For more than 25 years, with your help, we've been providing families with hope, health and the opportunity
+            to break the cycle of poverty.One of the major barriers to safe water and sanitation is affordable
+            financing. We address this barrier head-on through access to small, easily repayable loans. Every repaid
+            loan creates a new opportunity for another family.
+            By supporting Water.org, you are part of a solution that reaches more people, faster. Together with our 160
+            partners around the world, we've helped mobilize $2.5 billion in capital to support small loans that bring
+            access to safe water and sanitation to millions of people in need.</p>
+        <div class="thumbnail">
+            <img src="img/images.jpg" alt="water image" class="imgfluid">
+
+        </div>
+    </section>
+
+
+
+
+
+    <script>
+        const successCallback = (position) => {
+            console.log(position);
+        };
+        const errorCallback = (error) => {
+            console.error(error);
+        };
+
+
+        navigator.geolocation.getCurrentPosition(successCallback, errorCallback, {
+            enableHighAccuracy: true,
+            timeout: 5000
+        });
+        const watchId = navigator.geolocation.watchPosition(successCallback, errorCallback)
+
+    </script>
+
+    <script type="text/javascript">
+        function googleTranslateFunction() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        } </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateFunction"></script>
+
+        
+        
+
+
+
+
+
+
+</body>
+
+</html>
